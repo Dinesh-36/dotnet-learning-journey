@@ -46,8 +46,16 @@ class CustomMethods
 
     public static char GetOperator()
     {
-        string op = GetString("Enter your Operator +, *, -, / : ");
-        return op[0];
+        while (true)
+        {
+            Console.WriteLine("Enter your Operator +, *, -, / : ");
+            string? op = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(op) && (op[0] == '+' || op[0] == '-' || op[0] == '*' || op[0] == '/'))
+            {
+                return op[0];
+            }
+            Console.WriteLine("Please Enter valid Operator !");
+        }
     }
 
 
