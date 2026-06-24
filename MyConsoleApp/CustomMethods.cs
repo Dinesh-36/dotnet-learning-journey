@@ -1,5 +1,3 @@
-using System.Transactions;
-
 class CustomMethods
 {
     public static int GetInt(String message)

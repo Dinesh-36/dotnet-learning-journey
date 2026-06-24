@@ -14,7 +14,7 @@ class Loop
     }
     public static void SumNumbers()
     {
-        int n = Calculator.ReadInt("Enter the number: ");
+        int n = CustomMethods.GetInt("Enter the number: ");
         int sum = 0;
         if (n < 0)
         {
@@ -29,7 +29,7 @@ class Loop
     }
     public static void MultiplicationTable()
     {
-        int n = Calculator.ReadInt("Enter the table :");
+        int n = CustomMethods.GetInt("Enter the table :");
         for (int i = 1; i <= 10; i++)
         {
             Console.WriteLine($"{i} * {n} = {i * n}");
@@ -38,7 +38,7 @@ class Loop
 
     public static void Factorial()
     {
-        int n = Calculator.ReadInt("Enter the number for Factorial : ");
+        int n = CustomMethods.GetInt("Enter the number for Factorial : ");
         int fact = 1;
         for (int i = n; i >= 1; i--)
         {
@@ -51,7 +51,7 @@ class Loop
     {
         int first = 0;
         int second = 1;
-        int n = Calculator.ReadInt("enter the number for Fibonacci : ");
+        int n = CustomMethods.GetInt("enter the number for Fibonacci : ");
         if (n < 1)
         {
             Console.Write("Enter a valid number");

@@ -19,7 +19,8 @@ class Prog
         // Araays.NumberExistInArray();
         // Araays.FindIndex();
         // Araays.ReverseAnArray();
-        Araays.SecondLargestInArray();
+        // Araays.SecondLargestInArray();
+        Araays.BubbleSort();
 
 
 
